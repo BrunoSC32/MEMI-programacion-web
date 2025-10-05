@@ -1,0 +1,91 @@
+/* Components: header, footer and helpers. Assumes color tokens are defined in css/base.css */
+
+/* Layout container */
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-surface, #fff);
+  color: var(--color-text, #111);
+  padding: .5rem .75rem;
+  z-index: 10000;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* Header */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--color-primary, #0a7abc);
+  color: var(--color-on-theme, #fff);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+.site-header .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  min-height: 56px;
+}
+.brand, .brand-right { display: flex; align-items: center; }
+.brand-link { display: inline-flex; align-items: center; gap: .5rem; }
+.header-right { display: inline-flex; align-items: center; gap: .5rem; }
+
+.site-header a { color: inherit; }
+
+/* Logo sizing: use short logo on mobile, long logo on >=768px */
+.logo { display: block; height: 28px; width: auto; }
+.logo.long { display: none; }
+@media (min-width: 768px) {
+  .logo { height: 90px; }
+  .logo.short { display: none; }
+  .logo.long { display: inline-block; }
+}
+
+/* Navigation menu */
+.nav-toggle {
+  background: var(--color-surface, #fff);
+  color: var(--color-text, #111);
+  border: 1px solid var(--color-muted, #999);
+  border-radius: 6px;
+  padding: .35rem .6rem;
+}
+
+/* Footer */
+.site-footer {
+  color: var(--color-on-theme, #fff);
+  background-color: var(--color-primary, #0a7abc);
+  padding-block: 2rem;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 2rem;
+}
+.footer-col h3 { margin: 0; font-size: 1.05rem; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin: .25rem 0; }
+.footer-links a { color: inherit; }
+
+@media (min-width: 768px) {
+  .footer-inner { grid-template-columns: repeat(3, 1fr); }
+}
+
+.footer-bottom {
+  color: var(--color-on-theme, #fff);
+  background-color: var(--color-primary-600, #08679e);
+  padding-block: .75rem;
+}
+.footer-bottom-inner { font-size: .9rem; }
