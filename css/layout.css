@@ -30,7 +30,7 @@ header {
 /* Logos: altura coherente y sin deformación */
 .logo-memi img,
 .logo-umss img {
-  height: 36px;
+  height: 50px;
   width: auto;
 }
 
@@ -56,4 +56,39 @@ main { padding-top: var(--space-4); }
   /* Logos ligeramente más grandes en desktop */
   .logo-memi img,
   .logo-umss img { height: 44px; }
+}
+
+/* ===== Footer (mobile first) ===== */
+footer {
+  background: var(--color-azul-profundo);
+  color: var(--color-blanco);
+  margin-top: var(--space-6);
+  box-shadow: var(--shadow-1) inset 0 1px 0 color-mix(in oklab, #000 10%, transparent);
+}
+
+.footer-container {
+  display: grid;
+  gap: var(--space-5);
+  padding-block: var(--space-6);
+}
+
+/* 3 columnas en tablet+ */
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1.2fr 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Banda inferior */
+.footer-bottom {
+  border-top: 1px solid color-mix(in oklab, var(--color-blanco) 20%, transparent);
+  background: color-mix(in oklab, var(--color-azul-profundo) 92%, black 8%);
+}
+.footer-bottom-inner {
+  padding-block: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
