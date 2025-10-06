@@ -1,129 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Centro MEMI - UMSS</title>
-  <meta name="description" content="Centro de Mejoramiento de la Enseñanza de la Matemática e Informática - UMSS.">
-  <link rel="icon" type="image/png" href="img/logos/memi.png">
+  <meta name="description" content="Centro MEMI: apoyo a la enseñanza de Matemática e Informática en la UMSS." />
+  <link rel="icon" type="image/png" href="img/logos/memi.png" />
 
-  <!-- Vincular hojas de estilo en orden -->
-  <link rel="stylesheet" href="/css/core/variables.css">
-  <link rel="stylesheet" href="/css/core/base.css">
-  <link rel="stylesheet" href="/css/core/layout.css">
-  <link rel="stylesheet" href="/css/components/navigation.css">
-  <link rel="stylesheet" href="/css/components/nav-panel.css">
-  <link rel="stylesheet" href="/css/components/carousel.css">
-  <link rel="stylesheet" href="/css/components/footer.css">
-  <link rel="stylesheet" href="/css/pages/home.css">
+  <!-- CSS core y de componentes existentes -->
+  <link rel="stylesheet" href="/css/core/variables.css" />
+  <link rel="stylesheet" href="/css/core/base.css" />
+  <link rel="stylesheet" href="/css/core/layout.css" />
+  <link rel="stylesheet" href="/css/components/navigation.css" />
+  <link rel="stylesheet" href="/css/components/nav-panel.css" />
+  <link rel="stylesheet" href="/css/components/carousel.css" />
+  <link rel="stylesheet" href="/css/components/footer.css" />
+  <link rel="stylesheet" href="/css/pages/home.css" />
 
-  <!-- Tipografías externas (Google Fonts) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-  <!-- Header -->
+  <!-- Header (inyectado) -->
   <div id="header-container"></div>
 
-  <!-- Misión / Visión / Valores -->
-  <section id="mvv">
+  <!-- HERO: Propuesta de valor + CTAs -->
+  <section id="hero">
     <div class="container">
-      <h2>Misión</h2>
-      <p>Brindar cursos especializados, asesoramiento y elaboración de textos de apoyo a profesionales de las áreas de Matemáticas e Informática tanto de Universidad como de Colegio, orientados al mejoramiento de su enseñanza y aprendizaje.</p>
-
-      <h2>Visión</h2>
-      <p>Ser un Centro de apoyo de referencia en la enseñanza de la Matemática y la Informática en nuestra comunidad, tanto para profesionales universitarios, profesores de colegio y estudiantes.</p>
-    </div>
-  </section>
-
-  <!-- Carrusel / avisos -->
-  <div id="carousel-container"></div>
-
-  <!-- Acerca de -->
-  <section id="about">
-    <div class="container">
-      <h2>Acerca de</h2>
-
-      <article>
-        <h3>Antecedentes</h3>
-        <p>El Programa de Mejoramiento de la Enseñanza de la Matemática e Informática (MEMI) inició sus actividades en enero de 1991 con el objetivo de mejorar la educación en las áreas de Matemática e Informática de la Facultad de Ciencias y Tecnología en la UMSS.</p>
-      </article>
-
-      <article>
-        <h3>Datos Históricos</h3>
-        <p>El Programa abarcó tres áreas: Matemáticas a nivel universitario, Matemáticas a nivel ciclo medio e Informática a nivel universitario. En 2010 se transformó en el Centro MEMI mediante Resolución Rectoral N° 389/10.</p>
-      </article>
-
-      <article>
-        <h3>Autoridades</h3>
-        <ul>
-          <li>Mgr. Kirt Rolando Jaldín Rosales – Director Centro MEMI</li>
-          <li>Mgr. Luis Roberto Zegarra Dorado – Coordinador Área Matemática</li>
-          <li>Mgr. Jorge Orellana Araoz – Coordinador Área Informática</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <!-- Cursos / Seminarios -->
-  <section id="courses">
-    <div class="container">
-      <h2>Cursos y Seminarios</h2>
-      <p>Sección para subir afiches de cursos de manera cronológica.</p>
-      <!-- Aquí se mostrarán afiches (imágenes) dinámicamente -->
-    </div>
-  </section>
-
-  <!-- Publicaciones -->
-  <section id="publications">
-    <div class="container">
-      <h2>Publicaciones</h2>
-      <p>Documentos PDF clasificados por área (Matemáticas e Informática) con descripción y acceso al documento.</p>
-      <!-- Cards de publicaciones -->
-    </div>
-  </section>
-
-  <!-- Servicios -->
-  <section id="services">
-    <div class="container">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Cursos de formación para profesores de colegio</li>
-        <li>Cursos de actualización para profesionales</li>
-        <li>Asesoramiento en la enseñanza de las Matemáticas e Informática</li>
-        <li>Conferencias, seminarios y talleres especializados</li>
-        <li>Alquiler de ambientes para eventos académicos</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ICPC -->
-  <section id="icpc">
-    <div class="container">
-      <h2>ICPC UMSS</h2>
-      <p>El Centro MEMI acoge en su infraestructura al ICPC UMSS.</p>
-      <!-- Aquí se podrán subir afiches, fotos y videos -->
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p><strong>Dirección:</strong> Campus Central UMSS, Edificio MEMI</p>
-      <p><strong>Teléfono:</strong> (+591) 4 4666037 - IP 36540</p>
-      <p><strong>Correo:</strong> <a href="mailto:memi@fcyt.umss.edu.bo">memi@fcyt.umss.edu.bo</a></p>
-      <div id="map">
-        <!-- Aquí irá un mapa embebido o imagen -->
+      <h1>Centro MEMI</h1>
+      <p>Centro de Mejoramiento de la enseñanza de la Matemática e Informática en la UMSS.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/pages/courses.html">Ver cursos y seminarios</a>
+        <a class="btn btn-secondary" href="/pages/about.html">Conoce el MEMI</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- AVISOS / NOTICIAS (corto) -->
+  <section id="notices">
+    <div class="container">
+      <h2>Novedades</h2>
+      <div id="carousel-container"></div>
+    </div>
+  </section>
+
+  <!-- DESTACADOS / ACCESOS RÁPIDOS -->
+  <section id="highlights">
+    <div class="container">
+      <h2>Explora</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="/pages/courses.html">Cursos y Seminarios</a></h3>
+          <p>Actualización docente y profesional.</p>
+        </article>
+        <article class="card">
+          <h3><a href="/pages/publications.html">Publicaciones</a></h3>
+          <p>Material académico y técnico.</p>
+        </article>
+        <article class="card">
+          <h3><a href="/pages/services.html">Servicios</a></h3>
+          <p>Asesoría, talleres y eventos.</p>
+        </article>
+        <article class="card">
+          <h3><a href="/pages/icpc.html">ICPC UMSS</a></h3>
+          <p>Entrenamiento y actividades ICPC.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE EL MEMI (teaser muy breve) -->
+  <section id="about-teaser">
+    <div class="container">
+      <h2>Sobre el MEMI</h2>
+      <p>Desde 1991 impulsamos la calidad de la enseñanza de la Matemática e Informática en la UMSS y la comunidad.</p>
+      <p><a class="link" href="/pages/about.html">Leer historia, misión y autoridades →</a></p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIO / IMPACTO (opcional, 1 pieza breve) -->
+  <section id="impact" aria-label="Impacto">
+    <div class="container">
+      <blockquote>
+        <p>“El MEMI ha sido un referente en la actualización docente en nuestra facultad.”</p>
+        <cite>— Docente FCyT</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CONTACTO (CTA breve) -->
+  <section id="contact-cta">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>¿Tienes consultas sobre cursos o publicaciones?</p>
+      <p><a class="btn" href="/pages/contact.html">Ir a Contacto</a></p>
+    </div>
+  </section>
+
+  <!-- Footer (inyectado) -->
   <div id="footer-container"></div>
 
+  <!-- Entrada JS (tu setup actual) -->
   <script type="module" src="/js/entries/home.entry.js"></script>
 </body>
 </html>
-

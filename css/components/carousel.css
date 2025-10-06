@@ -11,22 +11,28 @@
 
 .carousel-track {
   display: flex;
+  height: 100%;
   transition: transform .4s ease;
   will-change: transform;
 }
 
 .carousel-slide {
   min-width: 100%;
+  height: 100%;
   position: relative;
   isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-gris-claro);
 }
 
 .carousel-slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  aspect-ratio: 16 / 8;
-  object-fit: cover; 
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Caption en tarjeta */
@@ -34,7 +40,8 @@
   position: absolute;
   inset: auto var(--space-4) var(--space-4) var(--space-4);
   max-width: min(44ch, 85%);
-  background: color-mix(in oklab, var(--color-azul-profundo) 85%, transparent);
+  background: rgba(26, 40, 77, 0.75); /* fallback when color-mix unsupported */
+  background: color-mix(in oklab, var(--color-azul-profundo) 75%, transparent);
   color: var(--color-blanco);
   padding: var(--space-4);
   border-radius: var(--radius-m);
@@ -96,12 +103,35 @@
 /* Responsive refinements */
 @media (max-width: 767px) {
   .carousel-slide {
-    min-height: 540px;         
+    min-height: 540px;
   }
 
   .carousel-slide img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
+}
+/* Altura consistente por relación de aspecto */
+.carousel-slide {
+  aspect-ratio: 16 / 10;        /* móvil: más alto para que el texto respire */
+  position: relative;
+  overflow: hidden;              /* recorta la imagen sobrante */
+}
+
+/* La imagen siempre llena el slide */
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* rellena y recorta sin deformar */
+  object-position: center;       /* ajusta el foco si hace falta */
+  display: block;
+}
+
+/* En pantallas mayores, banner más panorámico */
+@media (min-width: 768px) {
+  .carousel-slide { aspect-ratio: 16 / 7; }
+}
+@media (min-width: 1280px) {
+  .carousel-slide { aspect-ratio: 21 / 9; }
 }

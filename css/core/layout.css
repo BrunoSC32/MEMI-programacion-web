@@ -55,7 +55,7 @@ main { padding-top: var(--space-4); }
 
   /* Logos ligeramente más grandes en desktop */
   .logo-memi img,
-  .logo-umss img { height: 44px; }
+  .logo-umss img { height: 75px; }
 }
 
 /* ===== Footer (mobile first) ===== */
