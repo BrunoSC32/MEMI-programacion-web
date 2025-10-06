@@ -4,8 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centro MEMI - UMSS</title>
-  <meta name="description" content="Centro de Mejoramiento de la Enseñanza de la Matemática e Informática - UMSS. Cursos, publicaciones y servicios académicos.">
+  <meta name="description" content="Centro de Mejoramiento de la Enseñanza de la Matemática e Informática - UMSS.">
   <link rel="icon" type="image/png" href="img/logos/memi.png">
+
+  <!-- Vincular hojas de estilo en orden -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+
+  <!-- Tipografías externas (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -130,16 +140,7 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container footer-container">
-      <p>© 2025 Centro MEMI - UMSS | Facultad de Ciencias y Tecnología</p>
-      <div class="footer-links">
-        <a href="mailto:memi@fcyt.umss.edu.bo">Correo</a>
-        <a href="https://www.facebook.com/memiumss" target="_blank">Facebook</a>
-        <a href="https://www.fcyt.umss.edu.bo" target="_blank">Web FCyT</a>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-container"></div>
 
   <script type="module" src="js/entries/home.entry.js"></script>
 </body>
