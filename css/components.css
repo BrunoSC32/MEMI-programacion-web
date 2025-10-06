@@ -117,3 +117,86 @@ footer a:focus-visible {
 
 /* Espaciado vertical de párrafos en el footer */
 footer p { margin: 0 0 0.35rem; }
+
+/* ===== Panel persiana (mobile first) ===== */
+.nav-panel {
+  background: var(--color-blanco);
+  border-bottom: 1px solid color-mix(in oklab, var(--color-azul-profundo) 15%, transparent);
+  overflow: hidden;                /* necesario para el slide */
+  max-height: 0;                   /* cerrado por defecto */
+  transition: max-height .28s ease;
+  will-change: max-height;
+}
+
+/* cuando JS quite hidden, usamos una clase para animar */
+.nav-panel.is-open {
+  /* max-height dinámico lo establecerá JS con scrollHeight */
+}
+
+/* lista y enlaces */
+.nav-panel-list {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-2) var(--gutter-inline) var(--space-4);
+}
+.nav-panel-list > li + li { margin-top: 4px; }
+
+.nav-panel a {
+  display: block;
+  padding: .625rem .5rem;
+  border-radius: var(--radius-s);
+  color: var(--color-azul-profundo);
+  text-decoration: none;
+}
+.nav-panel a:hover { background: var(--color-gris-claro); }
+.nav-panel a:focus-visible {
+  outline: var(--focus-outline);
+  box-shadow: var(--focus-shadow);
+}
+
+/* ===== Submenú “Acerca de” ===== */
+.has-submenu { margin-top: 4px; }
+
+.submenu-toggle {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: .625rem .5rem;
+  border-radius: var(--radius-s);
+  font: inherit;
+  color: var(--color-azul-profundo);
+  cursor: pointer;
+}
+.submenu-toggle:hover { background: var(--color-gris-claro); }
+.submenu-toggle:focus-visible {
+  outline: var(--focus-outline);
+  box-shadow: var(--focus-shadow);
+}
+
+.submenu {
+  list-style: none;
+  margin: 2px 0 0;
+  padding-left: 1rem;
+  border-left: 2px solid color-mix(in oklab, var(--color-azul-profundo) 20%, transparent);
+}
+.submenu li + li { margin-top: 2px; }
+.submenu a { padding: .5rem .25rem; }
+
+/* caret que rota al abrir */
+.caret {
+  float: right;
+  transition: transform .2s ease;
+}
+.submenu-toggle[aria-expanded="true"] .caret { transform: rotate(180deg); }
+
+/* ===== Desktop: ocultamos la persiana (usas tu nav de escritorio) ===== */
+@media (min-width: 768px) {
+  .nav-panel { display: none !important; }
+}
+
+/* Respeto motion reducido */
+@media (prefers-reduced-motion: reduce) {
+  .nav-panel { transition: none; }
+  .caret { transition: none; }
+}

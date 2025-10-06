@@ -1,27 +1,52 @@
 <header>
   <div class="container header-container">
     <div class="logo-memi">
-      <a class="brand-link" href="/index.html">
-        <img class="brand-img" src="/img/logos/Memi_short.png" alt="Logo Centro MEMI">
+      <a href="/index.html">
+        <img src="/img/logos/Memi_short.png" alt="Logo Centro MEMI">
       </a>
     </div>
 
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <button class="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="nav-panel">☰</button>
 
-    <nav class="nav-menu" aria-label="Navegación principal">
+    <nav class="nav-menu desktop-nav" aria-label="Navegación de escritorio">
       <ul>
         <li><a href="/pages/mvv.html">Misión / Visión / Valores</a></li>
         <li><a href="/pages/about.html">Acerca de</a></li>
-        <li><a href="/pages/courses.html">Cursos / Seminarios</a></li>
-        <li><a href="/pages/publications.html">Publicaciones</a></li>
-        <li><a href="/pages/services.html">Servicios</a></li>
         <li><a href="/pages/icpc.html">ICPC UMSS</a></li>
-        <li><a href="/pages/contact.html">Contacto</a></li>
       </ul>
     </nav>
 
     <div class="logo-umss">
-      <img class="brand-img" src="/img/logos/Umss_long.png" alt="Logo UMSS - Facultad de Ciencias y Tecnología">
+      <img src="/img/logos/Umss_long.png" alt="Logo UMSS - Facultad de Ciencias y Tecnología">
     </div>
   </div>
 </header>
+
+<!-- Panel persiana móvil -->
+<nav id="nav-panel" class="nav-panel" aria-label="Navegación principal" hidden>
+  <ul class="nav-panel-list">
+    <li><a href="/pages/mvv.html">Misión / Visión / Valores</a></li>
+
+    <li class="has-submenu">
+      <button class="submenu-toggle"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="submenu-about">
+        Acerca de
+        <span class="caret" aria-hidden="true">▾</span>
+      </button>
+
+      <ul id="submenu-about" class="submenu" hidden>
+        <li><a href="/pages/about-antecedentes.html">Antecedentes</a></li>
+        <li><a href="/pages/about-historicos.html">Datos históricos</a></li>
+        <li><a href="/pages/about-autoridades.html">Autoridades</a></li>
+      </ul>
+    </li>
+
+    <li><a href="/pages/icpc.html">ICPC UMSS</a></li>
+  </ul>
+</nav>
