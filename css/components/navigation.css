@@ -51,7 +51,7 @@
   .nav-menu ul {
     display: flex;
     align-items: center;
-    justify-content: center;     /* nav centrado */
+    justify-content: center;   
     list-style: none;
     gap: clamp(0.5rem, 2vw, 1.25rem);
     margin: 0;
@@ -67,7 +67,7 @@
     transition: border-color .2s ease;
   }
   .nav-menu a:hover {
-    border-bottom-color: var(--color-verde-memi); /* acento sutil */
+    border-bottom-color: var(--color-verde-memi); 
   }
   .nav-menu a:focus-visible {
     outline: var(--focus-outline);

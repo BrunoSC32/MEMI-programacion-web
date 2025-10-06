@@ -35,7 +35,7 @@
 
   /* Layout base */
   --container-max: 1200px;
-  --gutter-inline: 1rem;      /* padding lateral en móvil */
+  --gutter-inline: 1rem;      
 
   /* Header */
   --header-h-mobile: 56px;
@@ -58,7 +58,7 @@
 @media (min-width: 768px) {
   :root {
     --text-base: 17px;
-    --text-h1: 2.5rem;   /* ~40px */
+    --text-h1: 2.5rem; 
     --text-h2: 2rem;
     --text-h3: 1.5rem;
     --text-h4: 1.25rem;
@@ -71,10 +71,10 @@
 @media (min-width: 1280px) {
   :root {
     --text-base: 18px;
-    --text-h1: 3rem;     /* ~48px */
+    --text-h1: 3rem;     
     --text-h2: 2.25rem;
     --text-h3: 1.75rem;
-    --text-h4: 1.25rem;  /* mantenemos h4 cómodo */
+    --text-h4: 1.25rem; 
 
     --gutter-inline: 2rem;
     --container-max: 1280px;

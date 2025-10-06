@@ -72,7 +72,6 @@ a:focus-visible {
   color: var(--color-blanco);
 }
 
-/* Respeto a usuarios con motion reducido */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

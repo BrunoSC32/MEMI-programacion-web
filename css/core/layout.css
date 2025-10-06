@@ -1,12 +1,11 @@
-/* ===== Contenedor fluido ===== */
+
 .container {
   max-width: var(--container-max);
   padding-inline: var(--gutter-inline);
   margin-inline: auto;
 }
 
-/* Distribución interna del header en móvil:
-   logo MEMI | toggle | logo UMSS */
+
 .header-container {
   display: grid;
   grid-template-columns: auto 48px auto;
@@ -15,38 +14,33 @@
   min-height: var(--header-h-mobile);
 }
 
-/* Logos: altura coherente y sin deformación */
 .logo-memi img,
 .logo-umss img {
   height: 50px;
   width: auto;
 }
 
-/* Alineaciones por defecto (mobile):
-   MEMI a la izquierda, toggle centrado, UMSS a la derecha */
 .logo-memi { justify-self: start; }
 .menu-toggle { justify-self: center; }
 .logo-umss { justify-self: end; }
 
-/* Espaciado debajo del header para que el contenido no quede pegado */
 main { padding-top: var(--space-4); }
 
-/* ===== Breakpoint tablet/desktop ===== */
+
 @media (min-width: 768px) {
-  /* Header un poco más alto y con más “aire” */
+
   header { min-height: var(--header-h-desktop); }
 
   .header-container {
-    grid-template-columns: auto 1fr auto;   /* MEMI | NAV | UMSS */
+    grid-template-columns: auto 1fr auto; 
     gap: var(--space-4);
   }
 
-  /* Logos ligeramente más grandes en desktop */
   .logo-memi img,
   .logo-umss img { height: 75px; }
 }
 
-/* ===== Footer (mobile first) ===== */
+
 footer {
   background: var(--color-azul-profundo);
   color: var(--color-blanco);

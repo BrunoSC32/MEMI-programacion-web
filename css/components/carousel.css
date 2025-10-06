@@ -47,6 +47,9 @@
   border-radius: var(--radius-m);
   box-shadow: var(--shadow-2);
 }
+.carousel-caption :where(h1, h2, h3, h4, h5, h6, p, li, span, small, strong, em, a) {
+  color: var(--color-blanco);
+}
 .carousel-caption h2 { margin: 0 0 .35rem; font-family: var(--font-heading); }
 .carousel-caption p  { margin: 0 0 .5rem; }
 .carousel-cta {
@@ -100,7 +103,6 @@
   opacity: 1;
 }
 
-/* Responsive refinements */
 @media (max-width: 767px) {
   .carousel-slide {
     min-height: 540px;
@@ -112,26 +114,26 @@
     object-fit: contain;
   }
 }
-/* Altura consistente por relación de aspecto */
+
 .carousel-slide {
-  aspect-ratio: 16 / 10;        /* móvil: más alto para que el texto respire */
+  aspect-ratio: 16 / 10;       
   position: relative;
-  overflow: hidden;              /* recorta la imagen sobrante */
+  overflow: hidden;           
 }
 
-/* La imagen siempre llena el slide */
 .carousel-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;             /* rellena y recorta sin deformar */
-  object-position: center;       /* ajusta el foco si hace falta */
+  object-fit: cover;           
+  object-position: center;      
   display: block;
 }
 
-/* En pantallas mayores, banner más panorámico */
+
 @media (min-width: 768px) {
   .carousel-slide { aspect-ratio: 16 / 7; }
 }
 @media (min-width: 1280px) {
   .carousel-slide { aspect-ratio: 21 / 9; }
 }
+

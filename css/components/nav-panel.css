@@ -2,14 +2,13 @@
 .nav-panel {
   background: var(--color-blanco);
   border-bottom: 1px solid color-mix(in oklab, var(--color-azul-profundo) 15%, transparent);
-  overflow: hidden;                /* necesario para el slide */
-  max-height: 0;                   /* cerrado por defecto */
+  overflow: hidden;             
+  max-height: 0;               
   transition: max-height .28s ease;
   will-change: max-height;
 }
 
 .nav-panel.is-open {
-  /* max-height dinamico lo establece JS mediante scrollHeight */
 }
 
 .nav-panel-list {
