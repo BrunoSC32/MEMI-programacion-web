@@ -1,0 +1,23 @@
+/* Color helpers */
+.text-navy { color: var(--memi-navy) !important; }
+.text-teal { color: var(--memi-teal) !important; }
+.text-red { color: var(--memi-red) !important; }
+.text-gray { color: #333 !important; }
+.bg-navy { background: var(--memi-navy) !important; color: #fff !important; }
+.bg-light { background: var(--memi-gray-100) !important; }
+.bg-white { background: #fff !important; }
+
+/* Font helpers */
+.font-serif { font-family: var(--font-serif) !important; }
+.font-sans { font-family: var(--font-sans) !important; }
+
+/* Layout helpers */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.stack-1 > * + * { margin-top: 0.5rem; }
+.stack-2 > * + * { margin-top: 1rem; }
+.stack-3 > * + * { margin-top: 1.5rem; }

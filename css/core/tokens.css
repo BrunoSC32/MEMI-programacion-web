@@ -1,0 +1,19 @@
+/* Design tokens: colors, typography, effects */
+:root {
+  /* Colors */
+  --memi-navy: #1A284D;
+  --memi-gray-100: #F5F5F5;
+  --memi-gray-400: #B0B0B0;
+  --memi-teal: #44E3A5;
+  --memi-red: #C62828;
+  --memi-white: #FFFFFF;
+
+  /* Typography */
+  --font-serif: 'Merriweather', serif;
+  --font-sans: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Radii and shadows */
+  --radius: 8px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+}

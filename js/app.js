@@ -24,10 +24,15 @@
     const list = header.querySelector('.nav-list');
     if (!toggle || !nav || !list) return;
 
+    const breakpoint = window.matchMedia('(min-width: 768px)');
+
     const setExpanded = (expanded) => {
       toggle.setAttribute('aria-expanded', String(expanded));
+      toggle.setAttribute('aria-label', expanded ? 'Cerrar men\u00fa' : 'Abrir men\u00fa');
       nav.classList.toggle('is-open', expanded);
     };
+
+    setExpanded(false);
 
     toggle.addEventListener('click', () => {
       const isOpen = toggle.getAttribute('aria-expanded') === 'true';
@@ -38,6 +43,19 @@
         firstLink && firstLink.focus();
       }
     });
+
+    nav.addEventListener('click', (event) => {
+      if (!breakpoint.matches && event.target.closest('a')) {
+        setExpanded(false);
+      }
+    });
+
+    const handleBreakpoint = () => setExpanded(false);
+    if (typeof breakpoint.addEventListener === 'function') {
+      breakpoint.addEventListener('change', handleBreakpoint);
+    } else {
+      breakpoint.addListener(handleBreakpoint);
+    }
 
     // Close on Escape key when focus is within nav
     nav.addEventListener('keydown', (e) => {
