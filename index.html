@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Centro MEMI - UMSS</title>
-  <meta name="description" content="Centro MEMI: apoyo a la enseñanza de Matemática e Informática en la UMSS." />
+  <meta name="description" content="Centro MEMI: apoyo a la ensenanza de Matematica e Informatica en la UMSS." />
   <link rel="icon" type="image/png" href="img/logos/memi.png" />
 
-  <!-- CSS core y de componentes existentes -->
   <link rel="stylesheet" href="/css/core/variables.css" />
   <link rel="stylesheet" href="/css/core/base.css" />
   <link rel="stylesheet" href="/css/core/layout.css" />
@@ -17,91 +16,145 @@
   <link rel="stylesheet" href="/css/components/footer.css" />
   <link rel="stylesheet" href="/css/pages/home.css" />
 
-  <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Header (inyectado) -->
   <div id="header-container"></div>
 
-  <!-- HERO: Propuesta de valor + CTAs -->
-  <section id="hero">
-    <div class="container">
-      <h1>Centro MEMI</h1>
-      <p>Centro de Mejoramiento de la enseñanza de la Matemática e Informática en la UMSS.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="/pages/courses.html">Ver cursos y seminarios</a>
-        <a class="btn btn-secondary" href="/pages/about.html">Conoce el MEMI</a>
+  <main>
+    <section class="home-hero">
+      <div class="container home-hero__inner">
+        <div class="home-hero__content">
+          <span class="home-eyebrow">UMSS</span>
+          <h1>Centro MEMI</h1>
+          <p>Impulsamos la ensenanza de Matematica e Informatica en la UMSS con programas, investigacion aplicada y recursos que fortalecen el aprendizaje.</p>
+          <div class="home-hero__actions">
+            <a class="home-btn home-btn--primary" href="/pages/courses.html">Ver cursos y seminarios</a>
+            <a class="home-btn home-btn--ghost" href="/pages/about.html">Conocer el MEMI</a>
+          </div>
+        </div>
+        <figure class="home-hero__media">
+          <img src="/img/MEMI.png" alt="Equipo colaborando con tecnologia" />
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- AVISOS / NOTICIAS (corto) -->
-  <section id="notices">
-    <div class="container">
-      <h2>Novedades</h2>
-      <div id="carousel-container"></div>
-    </div>
-  </section>
-
-  <!-- DESTACADOS / ACCESOS RÁPIDOS -->
-  <section id="highlights">
-    <div class="container">
-      <h2>Explora</h2>
-      <div class="grid">
-        <article class="card">
-          <h3><a href="/pages/courses.html">Cursos y Seminarios</a></h3>
-          <p>Actualización docente y profesional.</p>
-        </article>
-        <article class="card">
-          <h3><a href="/pages/publications.html">Publicaciones</a></h3>
-          <p>Material académico y técnico.</p>
-        </article>
-        <article class="card">
-          <h3><a href="/pages/services.html">Servicios</a></h3>
-          <p>Asesoría, talleres y eventos.</p>
-        </article>
-        <article class="card">
-          <h3><a href="/pages/icpc.html">ICPC UMSS</a></h3>
-          <p>Entrenamiento y actividades ICPC.</p>
-        </article>
+    <section class="home-section home-notices">
+      <div class="container">
+        <h2>Últimos avisos</h2>
+        <div id="carousel-container"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SOBRE EL MEMI (teaser muy breve) -->
-  <section id="about-teaser">
-    <div class="container">
-      <h2>Sobre el MEMI</h2>
-      <p>Desde 1991 impulsamos la calidad de la enseñanza de la Matemática e Informática en la UMSS y la comunidad.</p>
-      <p><a class="link" href="/pages/about.html">Leer historia, misión y autoridades →</a></p>
-    </div>
-  </section>
+    <section class="home-section home-summary">
+      <div class="container home-summary__grid">
+        <figure class="home-summary__media">
+          <img src="/img/hero/hero2.jpg" alt="Participantes en un taller" />
+        </figure>
+        <div class="home-summary__content">
+          <h2>Que es el MEMI</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget purus et augue pretium
+            tincidunt. Mauris auctor interdum lectus, sed fermentum quam vehicula sed. Vivamus lacinia
+            purus vitae nisl malesuada, a suscipit ipsum dapibus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales, nulla id tincidunt
+            luctus, metus velit suscipit arcu, non malesuada elit erat eget elit.
+          </p>
+          <div class="home-summary__links">
+            <a class="home-link" href="/pages/about.html">Historia y valores del MEMI</a>
+            <a class="home-link" href="/pages/about.html">Historia y equipo MEMI</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- TESTIMONIO / IMPACTO (opcional, 1 pieza breve) -->
-  <section id="impact" aria-label="Impacto">
-    <div class="container">
-      <blockquote>
-        <p>“El MEMI ha sido un referente en la actualización docente en nuestra facultad.”</p>
-        <cite>— Docente FCyT</cite>
-      </blockquote>
-    </div>
-  </section>
 
-  <!-- CONTACTO (CTA breve) -->
-  <section id="contact-cta">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>¿Tienes consultas sobre cursos o publicaciones?</p>
-      <p><a class="btn" href="/pages/contact.html">Ir a Contacto</a></p>
-    </div>
-  </section>
+    <section class="home-section home-destinations">
+      <div class="container">
+        <header class="home-section__header home-section__header--center">
+          <span class="home-eyebrow">Explora</span>
+          <h2>Descubre nuestros espacios</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget imperdiet tortor. Donec
+            lacinia consequat orci at pretium.
+          </p>
+        </header>
+        <div class="home-cards">
+          <article class="home-card">
+            <h3><a href="/pages/courses.html">Cursos y seminarios</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat arcu vel augue tempor.</p>
+            <a class="home-card__link" href="/pages/courses.html">Ir a cursos</a>
+          </article>
+          <article class="home-card">
+            <h3><a href="/pages/icpc.html">ICPC UMSS</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat arcu vel augue tempor.</p>
+            <a class="home-card__link" href="/pages/icpc.html">Ver competencias</a>
+          </article>
+          <article class="home-card">
+            <h3><a href="/pages/about.html">Conoce el MEMI</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat arcu vel augue tempor.</p>
+            <a class="home-card__link" href="/pages/about.html">Ver detalles</a>
+          </article>
+          <article class="home-card">
+            <h3><a href="/pages/about.html">Acerca del MEMI</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat arcu vel augue tempor.</p>
+            <a class="home-card__link" href="/pages/about.html">Visitar pagina</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer (inyectado) -->
+    <section class="home-section home-metrics">
+      <div class="container home-metrics__inner">
+        <div class="home-metrics__intro">
+          <span class="home-eyebrow">Impacto</span>
+          <h2>Aprender haciendo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae.
+          </p>
+        </div>
+        <div class="home-metrics__stats">
+          <div class="stat">
+            <span class="stat__value">30+</span>
+            <span class="stat__label">Programas anuales</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">500+</span>
+            <span class="stat__label">Participantes</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">1991</span>
+            <span class="stat__label">Ano de fundacion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section home-cta">
+      <div class="container home-cta__inner">
+        <div class="home-cta__content">
+          <h2>Quieres colaborar con el MEMI?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, lacus non consectetur
+            dictum, erat urna venenatis mi, non porttitor sem ex vitae felis.
+          </p>
+        </div>
+        <div class="home-cta__actions">
+          <a class="home-btn home-btn--primary" href="/pages/contact.html">Escribenos</a>
+          <a class="home-btn home-btn--ghost" href="/pages/courses.html">Explorar actividades</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <div id="footer-container"></div>
 
-  <!-- Entrada JS (tu setup actual) -->
   <script type="module" src="/js/entries/home.entry.js"></script>
 </body>
 </html>
+
+
+

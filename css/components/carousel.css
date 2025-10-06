@@ -41,7 +41,7 @@
   inset: auto var(--space-4) var(--space-4) var(--space-4);
   max-width: min(44ch, 85%);
   background: rgba(26, 40, 77, 0.75); /* fallback when color-mix unsupported */
-  background: color-mix(in oklab, var(--color-azul-profundo) 75%, transparent);
+  background: color-mix(in oklab, var(--color-azul-profundo) 90%, transparent);
   color: var(--color-blanco);
   padding: var(--space-4);
   border-radius: var(--radius-m);
