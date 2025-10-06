@@ -1,5 +1,11 @@
-/* Legacy bundle. Prefer linking to the new modular files under css/core, css/utilities and css/components. */
-@import url('./core/tokens.css');
-@import url('./core/base.css');
-@import url('./utilities/helpers.css');
-@import url('./components/cards.css');
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-azul-profundo);
+  background-color: var(--color-blanco);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--color-azul-profundo);
+}

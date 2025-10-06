@@ -1,32 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Centro MEMI – UMSS</title>
-    <meta name="description" content="Centro MEMI: misión, servicios, actividades académicas, publicaciones y proyectos." />
-    <!-- Core styles -->
-    <link rel="stylesheet" href="css/core/tokens.css" />
-    <link rel="stylesheet" href="css/core/base.css" />
-    <link rel="stylesheet" href="css/utilities/helpers.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro MEMI - UMSS</title>
+  <meta name="description" content="Centro de Mejoramiento de la Enseñanza de la Matemática e Informática - UMSS. Cursos, publicaciones y servicios académicos.">
+  <link rel="icon" type="image/png" href="img/logos/memi.png">
+</head>
 
-    <!-- Shared components -->
-    <link rel="stylesheet" href="css/components/cards.css" />
-    <link rel="stylesheet" href="css/components/header.css" />
-    <link rel="stylesheet" href="css/components/footer.css" />
-  </head>
-  <body>
-    <div data-include="partials/header.html"></div>
+<body>
 
-    <main id="main" class="container" style="padding-top: 84px;">
-      <section style="padding-block: 1.5rem;">
-        <h1 style="font-size: clamp(1.5rem, 2.5vw + 1rem, 2.25rem); margin: 0 0 .5rem;">Bienvenido al Centro MEMI</h1>
-        <p>Comencemos a construir el home con carrusel y novedades.</p>
-      </section>
-    </main>
+  <!-- Header -->
+  <div id="header-container"></div>
 
-    <div data-include="partials/footer.html"></div>
+  <!-- Carrusel / avisos -->
+  <section class="carousel" id="carousel">
+    <div class="carousel-item active">
+      <img src="img/hero/hero1.jpg" alt="Aviso MEMI 1">
+      <div class="carousel-caption">
+        <h2>Centro MEMI</h2>
+        <p>Mejorando la enseñanza de la Matemática e Informática desde 1991</p>
+      </div>
+    </div>
+    <!-- Más slides aquí -->
+  </section>
 
-    <script src="js/app.js" defer></script>
-  </body>
+  <!-- Misión / Visión / Valores -->
+  <section id="mvv">
+    <div class="container">
+      <h2>Misión</h2>
+      <p>Brindar cursos especializados, asesoramiento y elaboración de textos de apoyo a profesionales de las áreas de Matemáticas e Informática tanto de Universidad como de Colegio, orientados al mejoramiento de su enseñanza y aprendizaje.</p>
+
+      <h2>Visión</h2>
+      <p>Ser un Centro de apoyo de referencia en la enseñanza de la Matemática y la Informática en nuestra comunidad, tanto para profesionales universitarios, profesores de colegio y estudiantes.</p>
+
+      <h3>Valores</h3>
+      <ul>
+        <li>Respeto</li>
+        <li>Colaboración</li>
+        <li>Compromiso</li>
+        <li>Responsabilidad</li>
+        <li>Confianza</li>
+        <li>Trabajo en equipo</li>
+        <li>Espíritu crítico</li>
+        <li>Innovación</li>
+        <li>Creatividad</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Acerca de -->
+  <section id="about">
+    <div class="container">
+      <h2>Acerca de</h2>
+
+      <article>
+        <h3>Antecedentes</h3>
+        <p>El Programa de Mejoramiento de la Enseñanza de la Matemática e Informática (MEMI) inició sus actividades en enero de 1991 con el objetivo de mejorar la educación en las áreas de Matemática e Informática de la Facultad de Ciencias y Tecnología en la UMSS.</p>
+      </article>
+
+      <article>
+        <h3>Datos Históricos</h3>
+        <p>El Programa abarcó tres áreas: Matemáticas a nivel universitario, Matemáticas a nivel ciclo medio e Informática a nivel universitario. En 2010 se transformó en el Centro MEMI mediante Resolución Rectoral N° 389/10.</p>
+      </article>
+
+      <article>
+        <h3>Autoridades</h3>
+        <ul>
+          <li>Mgr. Kirt Rolando Jaldín Rosales – Director Centro MEMI</li>
+          <li>Mgr. Luis Roberto Zegarra Dorado – Coordinador Área Matemática</li>
+          <li>Mgr. Jorge Orellana Araoz – Coordinador Área Informática</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Cursos / Seminarios -->
+  <section id="courses">
+    <div class="container">
+      <h2>Cursos y Seminarios</h2>
+      <p>Sección para subir afiches de cursos de manera cronológica.</p>
+      <!-- Aquí se mostrarán afiches (imágenes) dinámicamente -->
+    </div>
+  </section>
+
+  <!-- Publicaciones -->
+  <section id="publications">
+    <div class="container">
+      <h2>Publicaciones</h2>
+      <p>Documentos PDF clasificados por área (Matemáticas e Informática) con descripción y acceso al documento.</p>
+      <!-- Cards de publicaciones -->
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="services">
+    <div class="container">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Cursos de formación para profesores de colegio</li>
+        <li>Cursos de actualización para profesionales</li>
+        <li>Asesoramiento en la enseñanza de las Matemáticas e Informática</li>
+        <li>Conferencias, seminarios y talleres especializados</li>
+        <li>Alquiler de ambientes para eventos académicos</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ICPC -->
+  <section id="icpc">
+    <div class="container">
+      <h2>ICPC UMSS</h2>
+      <p>El Centro MEMI acoge en su infraestructura al ICPC UMSS.</p>
+      <!-- Aquí se podrán subir afiches, fotos y videos -->
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p><strong>Dirección:</strong> Campus Central UMSS, Edificio MEMI</p>
+      <p><strong>Teléfono:</strong> (+591) 4 4666037 - IP 36540</p>
+      <p><strong>Correo:</strong> <a href="mailto:memi@fcyt.umss.edu.bo">memi@fcyt.umss.edu.bo</a></p>
+      <div id="map">
+        <!-- Aquí irá un mapa embebido o imagen -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>© 2025 Centro MEMI - UMSS | Facultad de Ciencias y Tecnología</p>
+      <div class="footer-links">
+        <a href="mailto:memi@fcyt.umss.edu.bo">Correo</a>
+        <a href="https://www.facebook.com/memiumss" target="_blank">Facebook</a>
+        <a href="https://www.fcyt.umss.edu.bo" target="_blank">Web FCyT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/entries/home.entry.js"></script>
+</body>
 </html>

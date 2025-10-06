@@ -1,0 +1,21 @@
+:root {
+  /* Paleta de colores */
+  --color-azul-profundo: #1A284D;
+  --color-gris-claro: #f1f0f0;
+  --color-gris-medio: #B0B0B0;
+  --color-verde-memi: #349296;
+  --color-rojo-umss: #aa2b2c;
+  --color-blanco: #FFFFFF;
+
+  /* Tipografía */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Tamaños base */
+  --text-base: 16px;
+  --text-h1: 2.5rem;
+  --text-h2: 2rem;
+  --text-h3: 1.5rem;
+  --text-h4: 1.25rem;
+  --text-small: 0.875rem;
+}
